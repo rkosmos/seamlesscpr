@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "SeamlessCPR",
+    "slug": "SeamlessCPRFinal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.xkimyuan.SeamlessCPRFinal",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.xkimyuan.SeamlessCPRFinal"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "We need your location to send help during emergencies.",
+          "locationWhenInUsePermission": "We need your location to send help during emergencies."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7ddf4bdc-9652-41db-b86e-660e611e431a"
+      }
+    }
+  }
+}
